@@ -20,7 +20,7 @@ describe("Test the root path",()=>{
         expect(response.statusCode).toBe(200)
     })
     test("Ite should response the GET method",async()=>{
-        const response=await request(app).post("http://localhost:8000/get").send({
+        const response=await request(app).get("http://localhost:8000/get").send({
             "Name":"Zeeshan",
             "Email":"zeeahn@gmail.com",
             "Age":12,
